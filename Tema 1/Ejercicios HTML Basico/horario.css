@@ -33,6 +33,9 @@ td.asig:hover{
 .DWEC{
     background-color: gold;
     transition: 0.3s;
+    animation-name: peloteo;
+    animation-duration: 2s;
+    animation: peloteo 2s infinite;
 }
 .DIW{
     background-color: firebrick;
@@ -46,4 +49,13 @@ td.asig:hover{
 .EIE{
     background-color: pink;
     transition: 0.3s;
+}
+
+@keyframes peloteo{
+    0%{background-color: red;}
+    20%{background-color: orangered;}
+    40%{background-color: yellow;}
+    60%{background-color: green;}
+    80%{background-color: blue;}
+    100%{background-color: purple; font-size: 150%;}
 }
