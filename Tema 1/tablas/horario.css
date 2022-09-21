@@ -1,0 +1,49 @@
+table{
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Courier, monospace;
+    margin: 10px;
+}
+thead{
+    background-color: navy;
+    color: whitesmoke;
+    font-size: 125%;
+}
+td{
+    border: 1px solid black;
+    padding: 10px;
+}
+td:first-child{
+    background-color: navy;
+    color: whitesmoke;
+    font-size: 75%;
+}
+td.asig:hover{
+    background-color: black;
+    color: white;
+    font-size: 115%;
+    padding: 8px;
+    transition: 0.3s;
+}
+.DWES{
+    background-color: aquamarine;
+    transition: 0.3s;
+}
+.DWEC{
+    background-color: gold;
+    transition: 0.3s;
+}
+.DIW{
+    background-color: firebrick;
+    color: whitesmoke;
+    transition: 0.3s;
+}
+.DAW{
+    background-color: lime;
+    transition: 0.3s;
+}
+.EIE{
+    background-color: pink;
+    transition: 0.3s;
+}
