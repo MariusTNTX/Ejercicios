@@ -1,0 +1,96 @@
+.red-text{
+    color: red;
+}
+
+p{
+    font-size: 16px;
+}
+
+h2{
+    font-family: Lobster, monospace;
+}
+
+.smaller-image{
+    width: 100px;
+}
+
+.thick-green-border{
+    border: 10px solid green;
+    border-radius: 50%;
+}
+
+.silver-background{
+    background-color: silver;
+}
+
+#order-list{
+    font-family: Comic Sans MS, sans-serif;
+    font-size: 12px;
+}
+
+#unorder-list{
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+table{
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 18px;
+    font-family: monospace;
+    margin: 10px;
+}
+thead{
+    background-color: navy;
+    color: whitesmoke;
+    font-size: 125%;
+}
+td{
+    border: 1px solid black;
+    padding: 10px;
+}
+td:first-child{
+    background-color: navy;
+    color: whitesmoke;
+    font-size: 75%;
+}
+td.asig:hover{
+    background-color: black;
+    color: white;
+    font-size: 115%;
+    padding: 8px;
+    transition: 0.3s;
+}
+.DWES{
+    background-color: aquamarine;
+    transition: 0.3s;
+}
+.DWEC{
+    background-color: gold;
+    transition: 0.3s;
+    animation-name: peloteo;
+    animation-duration: 2s;
+    animation: peloteo 2s infinite;
+}
+.DIW{
+    background-color: firebrick;
+    color: whitesmoke;
+    transition: 0.3s;
+}
+.DAW{
+    background-color: lime;
+    transition: 0.3s;
+}
+.EIE{
+    background-color: pink;
+    transition: 0.3s;
+}
+
+@keyframes peloteo{
+    0%{background-color: red;}
+    20%{background-color: orangered;}
+    40%{background-color: yellow;}
+    60%{background-color: green;}
+    80%{background-color: blue;}
+    100%{background-color: purple; font-size: 150%;}
+}
