@@ -13,6 +13,13 @@ h1, h2, h3{
     font-family: 'Times New Roman', Times, serif;
 }
 
+#centro{
+    width: 85%;
+    margin: 10px auto;
+    text-align: left;
+    border: 1px solid black;
+}
+
 header{
     width: 100%;
     background-color: rgb(91, 255, 241);
@@ -83,11 +90,11 @@ aside{
     display: inline-block;
     margin: 0px;
     padding: 10px;
-    width: 28%;
+    width: 24%;
     background-color: white;
     position: absolute;
     top: 180x;
-    left: 70%;
+    right: 7.5%;
 }
 
 aside img{
