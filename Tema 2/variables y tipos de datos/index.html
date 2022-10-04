@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variables y Tipos de Datos</title>
+</head>
+
+<body>
+  <script>
+    /* let nuevaVariable3 = 3;
+    const MENSAJE = "Hola otra vez";
+    if (true) {
+      var local1 = "hola";
+      let local2 = "caracola";
+      if (true) {
+        console.log(local2);
+      }
+    }
+    console.log(local1);
+    console.log(MENSAJE);
+
+    console.log(global1);
+    var global1="que pasa si?";
+    console.log(global1); */
+
+    /* let variable1 = "Hola"; //String="Hola"
+    let variable2 = 25; //Number=25
+    let variable3 = "25"; //String="25"
+    let variable4 = new Date(); //Object Date=fecha actual
+    let variable5; //undefined
+    let variable6 = () => {}; //function = 
+    let variable7 = true; //boolean=true
+    let variable8 = variable4; //null
+    variable8 = null; //null
+    console.log("El tipo de variable 1 es: " + typeof(variable1) + " y contiene: " + variable1);
+    console.log("El tipo de variable 2 es: " + typeof(variable2) + " y contiene: " + variable2);
+    console.log("El tipo de variable 3 es: " + typeof(variable3) + " y contiene: " + variable3);
+    console.log("El tipo de variable 4 es: " + typeof(variable4) + " y contiene: " + variable4);
+    console.log("El tipo de variable 5 es: " + typeof(variable5) + " y contiene: " + variable5);
+    console.log("El tipo de variable 6 es: " + typeof(variable6) + " y contiene: " + variable6);
+    console.log("El tipo de variable 7 es: " + typeof(variable7) + " y contiene: " + variable7);
+    console.log("El tipo de variable 8 es: " + typeof(variable8) + " y contiene: " + variable8); */
+
+    /* let num=20;
+    console.log(typeof(num));
+
+    let cadena="asdf movie";
+
+    console.log(isNaN(NaN));
+    console.log(isNaN(num));
+    console.log(isNaN(cadena)); */
+
+
+    let mensaje;
+    do{ //VERSIÓN SIN TRY-CATCH
+      mensaje=prompt("Introduce un número:");
+      if(isNaN(mensaje) || !mensaje){
+        alert("No has introducido un numero");
+      } else alert(`${mensaje} / 2 = ${mensaje/2}`);
+    }while(isNaN(mensaje) || !mensaje);
+
+
+    do{ //VERSIÓN CON TRY-CATCH
+      mensaje=prompt("Introduce un número:");
+      try{
+        if(isNaN(mensaje) || !mensaje){
+          throw Exception;
+        } else alert(`${mensaje} / 2 = ${mensaje/2}`);
+      } catch (Exception){
+        alert("No has introducido un numero");
+      }
+    }while(isNaN(mensaje) || !mensaje);
+
+
+  </script>
+</body>
+</html>
