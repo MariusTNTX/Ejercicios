@@ -3,7 +3,7 @@
 let str, startTime, linea="";
 
 do{
-  str = prompt("Introduce un texto");
+  str = prompt("Introduce un texto").trim();
   if(str.length==0) alert("No has introducido un texto, intentalo de nuevo");
 } while(str.length==0);
 
