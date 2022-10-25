@@ -1,0 +1,10 @@
+html, body{
+  background-color: black;
+  color: lime;
+  font-family: monospace;
+  font-size: larger;
+}
+
+p{
+  color: blueviolet;
+}
