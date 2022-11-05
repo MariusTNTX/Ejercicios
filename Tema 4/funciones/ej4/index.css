@@ -1,0 +1,25 @@
+*{text-align: center}
+
+#container{
+  border: 3px solid blue;
+  width: max-content;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+input{
+  margin: 0 10px 50px 10px;
+  height: 40px;
+}
+
+table{
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+th, td{
+  border: 1px solid black;
+  width: 50px;
+  font-size: 20px;
+}
