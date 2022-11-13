@@ -13,6 +13,7 @@ Criterios para empatar:
 Por cada partida:
  - Apuesta mínima
  - Apuesta máxima
+ - Número de jugadores
 
 Por cada ronda: 
  - Cada jugador situa una apuesta (3 casillas de fichas de diferentes valores)

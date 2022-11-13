@@ -1,2 +1,74 @@
+/* ESTILOS GENERALES */
+*{text-align: center}
 body{background-color: rgb(0, 58, 0)}
-img{width: 30%}
+img{
+  width: 40%;
+  display: inline-block;
+}
+
+
+/* PANTALLA DE INICIO */
+#pantallaInicio h1, #pantallaInicio span {color: white}
+#pantallaInicio h1, #pantallaInicio input[type=button]{margin: 50px 0}
+#pantallaInicio, #pantallaInicio input[type=button]{font-size: 150%}
+
+
+/* PARTIDA */
+
+/* ContenedorAcciones */
+#contenedorAcciones{
+  background-color: greenyellow;
+  border-radius: 40px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+#contenedorAcciones span, #contenedorAcciones input{
+  display: inline-block;
+  margin: 0 20px;
+  font-size: 150%;
+}
+#contenedorAcciones input[type=number]{width: 100px}
+
+
+/* CONTENEDORES */
+
+.jug{
+  display: inline-block;
+  margin: 0 20px;
+  width: 25%;
+}
+.jug input{
+  background-color: greenyellow;
+  width: 50%;
+}
+.jug h2, .jug p{color: white}
+
+.cartas{
+  border: 2px dotted white;
+  border-radius: 20px;
+  min-width: 80px;
+  min-height: 150px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subCartas{
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+}
+.carta{margin-right: -120px}
+
+.juega{border: 6px solid white}
+.noJuega{color: red}
+
+#btnAdd, #btnStop{
+  cursor: pointer;
+  width: fit-content;
+}
+#btnAdd{background-color: green}
+#btnStop{background-color: orangered}

@@ -2,8 +2,7 @@ let crono = document.getElementById("txtCrono");
 let iniciar = document.getElementById("btnStart");
 let parar = document.getElementById("btnStop");
 let reset = document.getElementById("btnRestart");
-let intervalo;
-let tiempo=0;
+let intervalo, tiempo=0;
 
 function tiempoFormateado(ti){
   let t = ti.getHours()-1;
