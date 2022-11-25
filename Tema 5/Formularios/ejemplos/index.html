@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo Formulario</title>
+</head>
+<body>
+  <form id="formulario1" action="#" method="post">
+    <fieldset style="display:inline-block">
+      <legend>Formulario</legend><br>
+      <label for="nombre">Escriba su nombre</label><br>
+      <input type="text" id="nombre" name="nombre"><br>
+      <label for="apellidos">Escriba sus apellidos</label><br>
+      <input type="text" id="apellidos" name="apellidos"><br>
+      <label for="telefono">Teléfono</label><br>
+      <input type="tel" id="telefono" name="Teléfono"><br>
+      <label for="email">Email</label><br>
+      <input type="email" id="email" name="email"><br>
+      <input type="file" name="archivo" id="archivo"><br>
+
+      <label for="sexo">Escriba su sexo</label><br>
+      <input type="radio" id="hombre" name="sexo" value="hombre">
+      <label for="hombre">Hombre</label><br>
+      <input type="radio" id="mujer"  name="sexo" value="mujer">
+      <label for="mujer">Mujer</label><br><br><br>
+      
+      <p>Descuentos:</p>
+      <label for="numerosa">Familia Numerosa</label>
+      <input type="checkbox" id="numerosa" name="numerosa" value="numerosa"><br>
+      <label for="pensionista">Pensionista</label>
+      <input type="checkbox" id="pensionista" name="pensionista" value="pensionista"><br>
+      <label for="ne">Necesidades Especiales</label>
+      <input type="checkbox" id="ne" name="ne" value="ne"><br>
+
+      <button type="submit">Enviar</button>
+      <input type="reset" value="Limpiar">
+    </fieldset>
+  </form>
+
+  <form id="formulario2" action="">
+    <fieldset style="display: inline-block;">
+      <legend>Formulario 2</legend>
+      <label for="ciudad">Escriba su Ciudad</label><br>
+      <input type="text" name="ciudad" id="ciudad" value="Por defecto"><br>
+
+      <input id="boton" type="button" value="Boton">
+      <button id="enviar" type="submit">Enviar</button>
+      <input id="limpiar" type="reset" value="Limpiar">
+    </fieldset>
+  </form>
+
+  <script src="index.js"></script>
+</body>
+</html>

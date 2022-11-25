@@ -2,22 +2,12 @@ let nvTime = new Date(2023,0,1,0,0,0);
 let restTime, restDate, a, m, d, h, i, s;
 let div = document.getElementById("contador");
 
-const tiempoRestante = function(){
+setInterval(()=>{
   restTime = nvTime.getTime() - new Date().getTime();
-  m = Math.floor(restTime/(60*60*24*30));
-  restTime -= 60*60*24*30;
-  d = Math.floor(restTime/(60*60*24));
-  restTime -= 60*60*24;
-  h = Math.floor(restTime/(60*60));
-  restTime -= 60*60;
-  i = Math.floor(restTime/(60));
-  restTime -= 60;
-  s = restTime;
+  m = Math.floor(restTime/(1000*60*60*24*30));
+  d = Math.floor(restTime/(1000*60*60*24))-m*30;
+  h = Math.floor(restTime/(1000*60*60))-m*30*24-d*24;
+  i = Math.floor(restTime/(1000*60))-m*30*24*60-d*24*60-h*60;
+  s = Math.floor(restTime/(1000))-m*30*24*60*60-d*24*60*60-h*60*60-m*60;
   div.innerHTML=`<h1>Meses: ${m}<br>Días: ${d}<br>Tiempo: ${h}:${i}:${s}</h1>`;
-}
-
-setInterval(tiempoRestante,1000);
-
-//alert(`Resto: ${new Date(nvTime)-new Date()}\nActual: ${new Date()}`);
-
-//1 mes = 30 dias * 24 horas * 60 minutos * 60 segundos
+},1000);

@@ -69,6 +69,7 @@ class Baraja{
   }
 
   getBaraja(){return this.cartas;}
+  sonidoCarta(){this.sonido.play();}
 }
 
 //-------------------------------------------------------------------------------------------------
@@ -97,12 +98,14 @@ class Jugador{
     }
     this.divTotal.value=this.total;
     this.divCartas.innerHTML+=carta.toHTML(this.mazo.length);
-    if(this.total>21) this.verificarTotal();
+    this.verificarTotal();
   }
-  desvelarCartaBanca(){
+  desvelarCartaBanca(baraja){
     this.mazo[1].desvelar();
     if(this.mazo[1].getNumero()>=10) this.total+=10;
     else this.total+=this.mazo[1].getNumero();
+    this.divTotal.value=this.total;
+    baraja.sonidoCarta();
   }
   esBlackJack(){
     let as=false, diez=false;
@@ -140,6 +143,11 @@ class Jugador{
   }
   verificarTotal(){
     if(this.total>21) this.pasarse();
+    else if(this.esBlackJack()){
+      this.total=21;
+      this.divTotal.value=21
+      this.plantarse();
+    }
   }
   plantarse(){
     this.plantado=true;
@@ -154,7 +162,7 @@ class Jugador{
   getNombre(){return this.nombre;}
   getApuesta(){return this.apuesta;}
   getTotal(){return this.total;}
-  getJuega(){return !this.plantado && this.total<=21;}
+  getJuega(){return !this.plantado && !this.pasado && !this.esBlackJack()/*this.total<=21;*/}
   
   setJuega(j){this.juega=j;}
 }
@@ -256,7 +264,7 @@ class Partida{
   resolverPartida(){
     if(this.banca.getJuega()){ //TURNO DE LA BANCA
       this.banca.setRecuadro(true);
-      this.banca.desvelarCartaBanca();
+      this.banca.desvelarCartaBanca(this.baraja);
       this.jugsEnJuego.push(this.banca);
       this.delaySiguienteTurno(this.banca);
     } else { //RESOLUCIÓN DE LA PARTIDA
