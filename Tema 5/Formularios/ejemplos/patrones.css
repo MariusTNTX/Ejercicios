@@ -1,0 +1,26 @@
+form {
+  text-align: center;
+  margin-top: 80px;
+}
+
+fieldset {
+  display: inline-block;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+legend {font-size: large}
+
+input[type="text"] {
+  display: block;
+  margin: 10px auto;
+}
+
+form div {text-align: left}
+
+input[type="submit"] {margin: 20px auto 0 auto}
+
+#codigos {
+  text-align: center;
+  margin-top: 40px;
+}

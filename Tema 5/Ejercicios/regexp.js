@@ -1,0 +1,103 @@
+/* ELEMENTOS TEXTO */
+
+let ej1a = document.getElementById("ej1a");
+let ej1b = document.getElementById("ej1b");
+let ej2a = document.getElementById("ej2a");
+let ej2b = document.getElementById("ej2b");
+let ej2c = document.getElementById("ej2c");
+let ej3a = document.getElementById("ej3a");
+let ej3b = document.getElementById("ej3b");
+let ej4a = document.getElementById("ej4a");
+let ej4b = document.getElementById("ej4b");
+let ej5a = document.getElementById("ej5a");
+let ej5b = document.getElementById("ej5b");
+let ej5c = document.getElementById("ej5c");
+let ej6a = document.getElementById("ej6a");
+let ej6b = document.getElementById("ej6b");
+let ej6c = document.getElementById("ej6c");
+let ej7a = document.getElementById("ej7a");
+let ej7b = document.getElementById("ej7b");
+let ej7c = document.getElementById("ej7c");
+let ej8a = document.getElementById("ej8a");
+let ej8b = document.getElementById("ej8b");
+let ej9a = document.getElementById("ej9a");
+let ej9b = document.getElementById("ej9b");
+let ej10a = document.getElementById("ej10a");
+let ej10b = document.getElementById("ej10b");
+let ej11a = document.getElementById("ej11a");
+let ej11b = document.getElementById("ej11b");
+let ej12a = document.getElementById("ej12a");
+let ej12b = document.getElementById("ej12b");
+let ej12c = document.getElementById("ej12c");
+let ej13a = document.getElementById("ej13a");
+let ej13b = document.getElementById("ej13b");
+let ej14a = document.getElementById("ej14a");
+let ej14b = document.getElementById("ej14b");
+let ej15a = document.getElementById("ej15a");
+let ej15b = document.getElementById("ej15b");
+let ej15c = document.getElementById("ej15c");
+let ej16a = document.getElementById("ej16a");
+let ej16b = document.getElementById("ej16b");
+let ej16c = document.getElementById("ej16c");
+
+/* EXPRESIONES REGULARES */
+
+let expEj1 = new RegExp(/^Parra/);
+let expEj2 = new RegExp(/parra/i);
+let expEj3 = new RegExp(/s$/);
+let expEj4 = new RegExp(/^[op].*q/);
+let expEj5 = new RegExp(/\bp[a-z]r+a\b/);
+let expEj6 = new RegExp(/\.$/);
+let expEj7 = new RegExp(/(perro|perra)|(tigre|tigresa)/);
+let expEj8 = new RegExp(/^\w*t\w*\b/);
+let expEj9 = new RegExp(/^[aeiou]/i);
+let expEj10 = new RegExp(/^[ptPT].*\.$/);
+let expEj11 = new RegExp(/^[ptPT]|\.$/);
+let expEj12 = new RegExp(/[¿?,.]/);
+let expEj13 = new RegExp(/casa.*moto/);
+let expEj14 = new RegExp(/(casa.*moto)|(moto.*casa)/);
+let expEj15 = new RegExp(/casa|moto/);
+let expEj16 = new RegExp(/\w{3}ía/);
+
+
+/* IMPRESIONES */
+
+ej1a.value=expEj1.test("Parra tenía una perra");
+ej1b.value=expEj1.test("parra tenía una parra");
+ej2a.value=expEj2.test("Parra tenía una perra");
+ej2b.value=expEj2.test("la parra del patio");
+ej2c.value=expEj2.test("la perra del patio");
+ej3a.value=expEj3.test("Tres tristes tigres");
+ej3b.value=expEj3.test("Tres tristes tigre");
+ej4a.value=expEj4.test("otro podador que por allí pasaba,");
+ej4b.value=expEj4.test("podo la parra de mi tío Porro.");
+ej5a.value=expEj5.test("Parra tenía una parra");
+ej5b.value=expEj5.test("pero la perra de Parra");
+ej5c.value=expEj5.test("p1rra tenía una parra");
+ej6a.value=expEj6.test("Parra tenía una perra.");
+ej6b.value=expEj6.test("Parra tenía una perra,");
+ej6c.value=expEj6.test("Parra tenía una perra");
+ej7a.value=expEj7.test("perro, perra, tigre o tigresa.");
+ej7b.value=expEj7.test("No tengo un tigre.");
+ej7c.value=expEj7.test("perry, perry, tigry, tigrisy.");
+ej8a.value=expEj8.test("Coge un atajo");
+ej8b.value=expEj8.test("Atajando llego antes");
+ej9a.value=expEj9.test("Hola");
+ej9b.value=expEj9.test("Adiós");
+ej10a.value=expEj10.test("Para ti.");
+ej10b.value=expEj10.test("Para mi");
+ej11a.value=expEj11.test("Para ti.");
+ej11b.value=expEj11.test("Para mi");
+ej12a.value=expEj12.test("¿Me gusta?");
+ej12b.value=expEj12.test("Me gusta...");
+ej12c.value=expEj12.test("Me gusta");
+ej13a.value=expEj13.test("Fui a casa en moto");
+ej13b.value=expEj13.test("Se estropeo la moto antes de llegar a casa");
+ej14a.value=expEj14.test("Fui a casa en moto");
+ej14b.value=expEj14.test("Se estropeo la moto antes de llegar a casa");
+ej15a.value=expEj15.test("Estoy en casa");
+ej15b.value=expEj15.test("Voy en moto");
+ej15c.value=expEj15.test("Fui a casa en moto");
+ej16a.value=expEj16.test("Lía");
+ej16b.value=expEj16.test("Lo sabía");
+ej16c.value=expEj16.test("Lo sabia");

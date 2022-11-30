@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión</title>
+  <link rel="stylesheet" href="patrones.css">
+</head>
+
+<body>
+  <form>
+    <fieldset>
+      <legend><strong>&nbsp;Iniciar Sesión&nbsp;</strong></legend>
+      <label for="codigo">Código de Usuario:</label>
+      <input type="text" name="codigo" id="codigo" pattern="^[AEIOU][13579][02468]\..{4}$" required>
+      <div>
+        <input type="checkbox" name="vocal" id="vocal"> Primer Caracter: Vocal Mayus<br>
+        <input type="checkbox" name="impar" id="impar"> Segundo Caracter: Impar<br>
+        <input type="checkbox" name="par" id="par"> Tercer Caracter: Par<br>
+        <input type="checkbox" name="punto" id="punto"> Cuarto Caracter: "."<br>
+        <input type="checkbox" name="caracteres" id="caracteres"> Caracteres Totales: 8<br>
+      </div>
+      <input type="submit" value="Iniciar Sesión">
+    </fieldset>
+  </form>
+
+  <div id="codigos">
+    <h1>Códigos para Probar:</h1>
+    <p>A12.dgt3</p>
+    <p>A21.dgt3</p>
+    <p>A12d.gt3</p>
+    <p>a12.dgt3</p>
+    <p>A'12.dgt3</p>
+  </div>
+
+  <script src="./patrones.js"></script>
+</body>
+
+</html>

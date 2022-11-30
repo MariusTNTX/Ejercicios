@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicios Expresiones Regulares</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <main>
+    <!-- EJERCICIO 1 -->
+    <div class="container">
+      <h1>Ejercicio 1</h1>
+      <p>Expresión regular para que el texto empiece por Parra</p>
+      <ol type="a">
+        <li>(true)Pruébalo con: Parra tenía una perra,</li>
+        <li>(false) Pruébalo con: parra tenía una parra</li>
+      </ol>
+      <form action="">
+        <input type="text" name="ej1a" id="ej1a"><br>
+        <input type="text" name="ej1b" id="ej1b">
+      </form>
+    </div>
+
+    <!-- EJERCICIO 2 -->
+    <div class="container">
+      <h1>Ejercicio 2</h1>
+      <p>Expresión regular para que el texto contenga parra, sin distinguir mayúsculas de minúsculas.</p>
+      <ol type="a">
+        <li>(true) Pruébalo con: Parra tenía una perra,</li>
+        <li>(true) Pruébalo con: la parra del patio</li>
+        <li>(false) Pruébalo con: la perra del patio</li>
+      </ol>
+      <form action="">
+        <input type="text" name="ej2a" id="ej2a"><br>
+        <input type="text" name="ej2b" id="ej2b"><br>
+        <input type="text" name="ej2c" id="ej2c">
+      </form>
+    </div>
+
+    <!-- EJERCICIO 3 -->
+    <div class="container">
+      <h1>Ejercicio 3</h1>
+      <p>Expresión regular para que el texto termine con la letra s.</p>
+      <ol type="a">
+        <li>(true) Pruébalo con: Tres tristes tigres</li>
+        <li>(false) Pruébalo con: Tres tristes tigre</li>
+      </ol>
+      <form action="">
+        <input type="text" name="ej3a" id="ej3a"><br>
+        <input type="text" name="ej3b" id="ej3b">
+      </form>
+    </div>
+
+    <!-- EJERCICIO 4 -->
+    <div class="container">
+      <h1>Ejercicio 4</h1>
+      <p>Expresión regular para que el texto empiece por o o por p y que además contenga la letra q.</p>
+      <ol type="a">
+        <li>(true) Pruébalo con: otro podador que por allí pasaba,</li>
+        <li>(false) Pruébalo con: podo la parra de mi tío Porro.</li>
+      </ol>
+      <form action="">
+        <input type="text" name="ej4a" id="ej4a"><br>
+        <input type="text" name="ej4b" id="ej4b">
+      </form>
+    </div>
+
+    <!-- EJERCICIO 5 -->
+    <div class="container">
+      <h1>Ejercicio 5</h1>
+      <p>Expresión regular para que el texto contenga palabras cuya primera letra sea una p, a continuación, cualquier letra, luego una o más r y por último una a.</p>
+      <ol type="a">
+        <li>(true) Pruébalo con: Parra tenía una parra</li>
+        <li>(true) Pruébalo con: pero la perra de Parra</li>
+        <li>(true) Pruébalo con: p1rra tenía una parra</li>
+      </ol>
+      <form action="">
+        <input type="text" name="ej5a" id="ej5a"><br>
+        <input type="text" name="ej5b" id="ej5b"><br>
+        <input type="text" name="ej5c" id="ej5c">
+      </form>
+    </div>
+
+    <!-- EJERCICIO 6 -->
+    <div class="container">
+      <h1>Ejercicio 6</h1>
+      <p>Expresión regular para que el texto termine en punto (.)</p>
+      <ol type="a">
+        <li>(true) Pruébalo con: Parra tenía una perra.</li>
+        <li>(false) Pruébalo con: Parra tenía una perra,</li>
+        <li>(false) Pruébalo con: Parra tenía una perra</li>
+      </ol>
+      <form action="">
+        <input type="text" name="ej6a" id="ej6a"><br>
+        <input type="text" name="ej6b" id="ej6b"><br>
+        <input type="text" name="ej6c" id="ej6c">
+      </form>
+    </div>
+
+    <!-- EJERCICIO 7 -->
+    <div class="container">
+      <h1>Ejercicio 7</h1>
+      <p>Expresión regular para que el texto contenga perro, perra, tigre o tigresa.</p>
+      <ol type="a">
+        <li>(true) Pruébalo con: perro, perra, tigre o tigresa.</li>
+        <li>(true) Pruébalo con: No tengo un tigre.</li>
+        <li>(false) Pruébalo con: perry, perry, tigry, tigrisy.</li>
+      </ol>
+      <form action="">
+        <input type="text" name="ej7a" id="ej7a"><br>
+        <input type="text" name="ej7b" id="ej7b"><br>
+        <input type="text" name="ej7c" id="ej7c">
+      </form>
+    </div>
+
+    <!-- EJERCICIO 8 -->
+    <div class="container">
+      <h1>Ejercicio 8</h1>
+      <p>Expresión regular para que el texto empiece por una palabra que contenga una t.</p>
+      <ol type="a">
+        <li>(false) Pruébalo con: Coge un atajo</li>
+        <li>(true) Pruébalo con: Atajando llego antes</li>
+      </ol>
+      <form action="">
+        <input type="text" name="ej8a" id="ej8a"><br>
+        <input type="text" name="ej8b" id="ej8b">
+      </form>
+    </div>
+
+    <!-- EJERCICIO 9 -->
+    <div class="container">
+      <h1>Ejercicio 9</h1>
+      <p>Expresión regular para que el texto empiece por vocal.</p>
+      <ol type="a">
+        <li>(false) Hola</li>
+        <li>(true) Adiós</li>
+      </ol>
+      <form action="">
+        <input type="text" name="ej9a" id="ej9a"><br>
+        <input type="text" name="ej9b" id="ej9b">
+      </form>
+    </div>
+
+    <!-- EJERCICIO 10 -->
+    <div class="container">
+      <h1>Ejercicio 10</h1>
+      <p>Expresión regular para que el texto empiece por una T o una P (mayúscula o minúscula) y que terminan con un punto.</p>
+      <ol type="a">
+        <li>(true) Para ti.</li>
+        <li>(false) Para mi</li>
+      </ol>
+      <form action="">
+        <input type="text" name="ej10a" id="ej10a"><br>
+        <input type="text" name="ej10b" id="ej10b">
+      </form>
+    </div>
+
+    <!-- EJERCICIO 11 -->
+    <div class="container">
+      <h1>Ejercicio 11</h1>
+      <p>Expresión regular para que el texto empiece por una T o una P (mayúscula o minúscula), o bien que terminan con un punto.</p>
+      <ol type="a">
+        <li>(true) Para ti.</li>
+        <li>(true) Para mi</li>
+      </ol>
+      <form action="">
+        <input type="text" name="ej11a" id="ej11a"><br>
+        <input type="text" name="ej11b" id="ej11b">
+      </form>
+    </div>
+
+    <!-- EJERCICIO 12 -->
+    <div class="container">
+      <h1>Ejercicio 11</h1>
+      <p>Expresión regular para que el texto tenga algún signo de interrogación, coma o punto.</p>
+      <ol type="a">
+        <li>(true) ¿Me gusta?</li>
+        <li>(true) Me gusta...</li>
+        <li>(false) Me gusta</li>
+      </ol>
+      <form action="">
+        <input type="text" name="ej12a" id="ej12a"><br>
+        <input type="text" name="ej12b" id="ej12b"><br>
+        <input type="text" name="ej12c" id="ej12c">
+      </form>
+    </div>
+
+    <!-- EJERCICIO 13 -->
+    <div class="container">
+      <h1>Ejercicio 13</h1>
+      <p>Expresión regular para que el texto tenga las palabras casa y moto en ese orden</p>
+      <ol type="a">
+        <li>(true) Pruébalo con: Fui a casa en moto</li>
+        <li>(false) Pruébalo con: Se estropeo la moto antes de llegar a casa</li>
+      </ol>
+      <form action="">
+        <input type="text" name="ej13a" id="ej13a"><br>
+        <input type="text" name="ej13b" id="ej13b">
+      </form>
+    </div>
+
+    <!-- EJERCICIO 14 -->
+    <div class="container">
+      <h1>Ejercicio 14</h1>
+      <p>Expresión regular para que el texto tenga las palabras casa y moto en el orden que sea</p>
+      <ol type="a">
+        <li>(true) Pruébalo con: Fui a casa en moto</li>
+        <li>(true) Pruébalo con: Se estropeo la moto antes de llegar a casa</li>
+      </ol>
+      <form action="">
+        <input type="text" name="ej14a" id="ej14a"><br>
+        <input type="text" name="ej14b" id="ej14b">
+      </form>
+    </div>
+
+    <!-- EJERCICIO 15 -->
+    <div class="container">
+      <h1>Ejercicio 15</h1>
+      <p>Expresión regular para que el texto tenga las palabras casa o moto</p>
+      <ol type="a">
+        <li>(true) Pruébalo con: Estoy en casa</li>
+        <li>(true) Pruébalo con: Voy en moto</li>
+        <li>(true) Pruébalo con: Fui a casa en moto</li>
+      </ol>
+      <form action="">
+        <input type="text" name="ej15a" id="ej15a"><br>
+        <input type="text" name="ej15b" id="ej15b"><br>
+        <input type="text" name="ej15c" id="ej15c">
+      </form>
+    </div>
+
+    <!-- EJERCICIO 16 -->
+    <div class="container">
+      <h1>Ejercicio 16</h1>
+      <p>Expresión regular para que el texto tenga alguna palabra de 5 letras, las dos ultimas que sean ía.</p>
+      <ol type="a">
+        <li>(false) Pruébalo con: Lía.</li>
+        <li>(true) Pruébalo con: Lo sabía.</li>
+        <li>(false) Pruébalo con: Lo sabia.</li>
+      </ol>
+      <form action="">
+        <input type="text" name="ej16a" id="ej16a"><br>
+        <input type="text" name="ej16b" id="ej16b"><br>
+        <input type="text" name="ej16c" id="ej16c">
+      </form>
+    </div>
+
+  </main>
+  <script src="regexp.js"></script>
+</body>
+
+</html>
