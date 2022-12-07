@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{text-align: center;}
+    form{
+      display: inline-block;
+      text-align: left;
+    }
+    fieldset{padding: 8px;}
+  </style>
+</head>
+<body>
+  <form action="#" method="get">
+    <fieldset>
+      <legend>Mi Formulario</legend>
+      <input type="text" name="caja" id="caja">
+      <input type="button" name="anadir" value="Añadir" id="anadir"><br><br>
+      
+      <input type="radio" name="radio" id="si" checked>
+      <label for="si">Si</label><br>
+      <input type="radio" name="radio" id="no">
+      <label for="no">No</label><br><br>
+
+      <div id="checkContainer">
+        <input type="checkbox" name="check" id="check">
+        <label for="check">Mi Checkbox</label><br>
+      </div><br><br>
+
+      <select name="list" id="selector">
+        <option value="cu">Cuenca</option>
+        <option value="al">Albacete</option>
+        <option value="to">Toledo</option>
+        <option value="ci">Ciudad Real</option>
+        <option value="gu">Guadalajara</option>
+      </select><br><br>
+
+      <input type="submit" name="enviar" value="Enviar">
+    </fieldset>
+  </form>
+  <script src="index2.js"></script>
+</body>
+</html>
