@@ -1,0 +1,27 @@
+#hola{
+  position: fixed;
+  background-color: yellow;
+  color: black;
+  left: 0;
+  top: 0;
+  padding: 4px;
+  height: 20px;
+  width: 100px;
+  text-align: center;
+}
+
+#img{
+  width: 800px;
+  height: 500px;
+  margin: 100px auto;
+  border: 5px solid black;
+}
+
+form{
+  text-align: center;
+  display: inline-block;
+}
+
+fieldset{
+  margin: 0 auto;
+}

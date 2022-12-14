@@ -10,12 +10,13 @@ let parrafos = document.getElementsByTagName("P"); //--> Colección HTML con tod
 
 function asignarEventos(){
   for(let p of parrafos){ //Por cada párrafo:
-    p.addEventListener("click",(e)=>{ //Al hacer clic únicamente sobre el párrafo: 
-      //if(e.srcElement.localName!="input") e.target.style.display="none";
+    //Al hacer clic únicamente sobre el párrafo:
+    p.addEventListener("click",(e)=>{
       console.log(e);
+      //Se almacena el input correspondiente y se cambia su estado con cada clic:
       if(e.target.localName!="input"){ 
-        let input = e.target.childNodes[1]; //Se almacena el input correspondiente
-        if(input.checked) input.checked=false; //Se cambia su estado con cada clic:
+        let input = e.target.childNodes[1]; 
+        if(input.checked) input.checked=false;
         else input.checked=true;
       }
     });
@@ -27,15 +28,22 @@ function asignarEventos(){
 
 //Asignar todos los Bordes y Checkbox
 for(let p of parrafos){ //Por cada párrafo:
-  p.style.border="1px solid black"; //Borde negro
-  p.innerHTML+="<input type='checkbox' name='chk'>"; //CheckBox al final
+  p.style.border="1px solid black";
+  p.innerHTML+="<input type='checkbox' name='chk'>";
 }
 
 //Asignar Eventos al Inicio
 asignarEventos();
 
-//Al hacer clic en 'añadir' se añade un párrafo con borde, checkbox y se reinician los eventos:
+//Al hacer clic en 'añadir' se añade un párrafo con borde, checkbox y se reinician todos los eventos:
 document.getElementById("boton").addEventListener("click",()=>{
   capa.innerHTML = "<p style='border:1px solid black'>" + texto.value + "<input type='checkbox' name='chk'></p>" + capa.innerHTML;
   asignarEventos();
 });
+
+/*let caja = document.getElementById("hola");
+
+ document.body.addEventListener("mousemove",(e)=>{
+  caja.style.left = e.clientX-50+"px";
+  caja.style.top = e.clientY-10+"px";
+}); */
