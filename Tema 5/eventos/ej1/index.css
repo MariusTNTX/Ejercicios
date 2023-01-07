@@ -1,0 +1,13 @@
+#capa {
+  position: fixed;
+  width: 50%;
+  height: 50%;
+  left: 25%;
+  top: 25%;
+  background-color: transparent;
+  border: 1px solid black;
+}
+
+#capa.verde{background-color: green;}
+#capa.rojo{background-color: red;}
+#capa.azul{background-color: blue;}

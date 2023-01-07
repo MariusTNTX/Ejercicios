@@ -1,0 +1,36 @@
+h1 {
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  background-color: peru;
+}
+
+figure {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 300px;
+}
+
+figure img {
+  width: 100%;
+}
+
+main {
+  position: absolute;
+  top: 100px;
+  left: 400px;
+}
+
+#fDescripcion {
+  display: none;
+}
+
+/* Nuevos estilos: */
+#capaError{
+  background-color: red;
+  color: white;
+}
+.error{
+  border: 1px solid red;
+}
