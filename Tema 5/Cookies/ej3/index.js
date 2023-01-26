@@ -18,6 +18,7 @@ let valNom = ()=>{
   if(campos.nombre.value!='') return true;
   errores.innerHTML+='- No se ha completado el campo "Nombre"<br>';
   campos.nombre.classList.add('error');
+  campos.nombre.dispatchEvent(new Event('focus')); //???
 }
 let valApe = ()=>{
   if(campos.apellidos.value!='') return true;
@@ -37,7 +38,7 @@ let valNif = ()=>{
   campos.nif.classList.add('error');
 }
 let valMail = ()=>{
-  let regExp = new RegExp(/^[\w\.]{3,}@\w{3,}\.\w{3}$/);
+  let regExp = new RegExp(/^[\w\.\-]{3,}@[\w\.\-]{3,}\.[a-zA-Z]{2,3}$/);
   if(regExp.test(campos.email.value)) return true;
   errores.innerHTML+='- El campo "Email" es incorrecto<br>';
   campos.email.classList.add('error');
@@ -68,9 +69,11 @@ let valHora = ()=>{
 
 let valid = [valNom,valApe,valEdad,valNif,valMail,valPro,valFec,valTel,valHora];
 
+
 /* Cookie de intentos de envío Pt.1*/
 if(!document.cookie.includes("intentos")) intentos.innerHTML="Intentos -> 0";
 else intentos.innerHTML="Intentos -> "+leerCookie("intentos");/* document.cookie.split("=")[1]; */
+
 
 /* Mayúsculas automáticas para nombre-apellidos */
 document.getElementById("nombre").addEventListener("blur",(e)=>{
@@ -79,6 +82,7 @@ document.getElementById("nombre").addEventListener("blur",(e)=>{
 document.getElementById("apellidos").addEventListener("blur",(e)=>{
   document.getElementById("apellidos").value = document.getElementById("apellidos").value.toUpperCase();
 });
+
 
 /* Gestión del Submit */
 document.getElementById("formulario").addEventListener("submit",(e)=>{
