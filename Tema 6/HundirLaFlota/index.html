@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table{
+      border-collapse: collapse;
+      display: inline-block;
+    }
+    td{
+      width: 60px;
+      height: 60px;
+      border: 1px solid black;
+    }
+    td:first-child, tr:first-child td{
+      border: none;
+      text-align: center;
+    }
+    #barcos{
+      position: absolute;
+      top: 186px;
+      left: 765px;
+    }
+    .xl,.lg,.md,.sm{
+      border: 1px solid black;
+      margin: 2px;
+      cursor: pointer;
+    }
+    .xl{padding: 116px 30px;}
+    .lg{padding: 85px 30px;}
+    .md{padding: 54px 30px;}
+    .sm{padding: 22px 30px;}
+    .barco{background-color: aqua;}
+  </style>
+</head>
+<body>
+  <table id="cuadricula"></table>
+  <div id="barcos"></div>
+
+  <script src="index.js"></script>
+</body>
+</html>

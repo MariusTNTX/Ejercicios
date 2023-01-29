@@ -11,6 +11,12 @@ class Partida{
       document.getElementById("azul") //3
     ];
     this.puntos = document.getElementById("puntos");
+    this.sonidos = [
+      this.cargarSonido("./la2.mp3"),
+      this.cargarSonido("./re2.mp3"),
+      this.cargarSonido("./sol2.mp3"),
+      this.cargarSonido("./si2.mp3")
+    ]; 
     this.prepararPartida(); //Se apagan las luces y se añaden los EventListener
     this.turnoMaquina(); //Inicia la máquina
   }
@@ -19,7 +25,15 @@ class Partida{
     for(let elem of this.elems){ //Por cada opción: 
       elem.classList.replace("on","off"); //Se apaga su luz
       elem.addEventListener("click",()=>{ //Si se pulsa la luz durante el turno del jugador se verifica la opción
-        if(this.turnoJ) this.verificarClick(elem);
+        if(this.turnoJ){
+          switch(elem.id){
+            case 'amarillo': this.sonidos[0].play(); break;
+            case 'rojo': this.sonidos[1].play(); break;
+            case 'verde': this.sonidos[2].play(); break;
+            case 'azul': this.sonidos[3].play(); break;
+          }
+          this.verificarClick(elem);
+        } 
       });
     } 
   }
@@ -32,7 +46,10 @@ class Partida{
     let luz = true; //Indica si debe dar luz o apagarse
     let id = setInterval(() => {
       if(i < this.colores.length){
-        if(luz) this.elems[this.colores[i]].classList.replace("off","on");
+        if(luz){
+          this.elems[this.colores[i]].classList.replace("off","on");
+          this.sonidos[this.colores[i]].play();
+        } 
         else {
           this.elems[this.colores[i]].classList.replace("on","off");
           i++;
@@ -78,4 +95,13 @@ class Partida{
     alert("Era el "+this.elems[this.colores[this.cont]].id+" pringao");
   }
 
+  cargarSonido(fuente) {
+    let sonido = document.createElement("audio");
+    sonido.src = fuente;
+    sonido.setAttribute("preload", "auto");
+    sonido.setAttribute("controls", "none");
+    sonido.style.display = "none"; //Oculto
+    document.body.appendChild(sonido);
+    return sonido;
+  }
 }
