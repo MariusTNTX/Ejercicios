@@ -7,7 +7,7 @@ capa.addEventListener("mousedown",(e)=>{
   if(e.button==0) capa.classList.add("rojo");
   else if(e.button==2) capa.classList.add("azul");
 });
-capa.addEventListener("mouseup",(e)=>{
+window.addEventListener("mouseup",(e)=>{
   if(e.button==0) capa.classList.remove("rojo");
   else if(e.button==2) capa.classList.remove("azul");
 });

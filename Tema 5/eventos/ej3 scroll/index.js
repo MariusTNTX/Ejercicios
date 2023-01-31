@@ -4,11 +4,12 @@ let capaBoton = document.getElementById("boton");
 /* SCROLL */
 capa.addEventListener("scroll", () => { 
   /* 
-    scrollTop -> Altura en píxeles en la que se encuentra el Scroll dentro de su contenido 
-    clientHeight -> Altura de la capa Scroll
-    scrollHeight -> scrollTop + clientHeight (altura del contenido + altura de la capa)
+    window.scrollY / div.scrollTop -> Altura en píxeles superior al viweport 
+    window.innerHeight / div.clientHeight -> Altura del viewport
+    document.body.clientHeight / div.scrollHeight -> viewport + altura superior al viewport
   */
   if(Math.ceil(capaScroll.scrollTop+capaScroll.clientHeight)>=capaScroll.scrollHeight){ 
+    capaScroll.scro
     capaBoton.style.display="block"; 
   } else capaBoton.style.display="none"; 
 });
@@ -18,4 +19,4 @@ let cerrar=document.getElementById("cerrar");
 
 cerrar.addEventListener("click",()=>{ 
   document.body.removeChild(capaScroll); 
-})
+});

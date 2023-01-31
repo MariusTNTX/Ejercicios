@@ -12,7 +12,6 @@ function asignarEventos(){
   for(let p of parrafos){ //Por cada párrafo:
     //Al hacer clic únicamente sobre el párrafo:
     p.addEventListener("click",(e)=>{
-      console.log(e);
       //Se almacena el input correspondiente y se cambia su estado con cada clic:
       if(e.target.localName!="input"){ 
         let input = e.target.childNodes[1]; 

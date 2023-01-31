@@ -1,7 +1,7 @@
 let cuadricula = document.getElementById("cuadricula"),
 fila, col, div, span, cuadric=[], barcoSelec, barcoOrient, 
 letras = ['A','B','C','D','E','F','G','H','I','J'], 
-barcos=['xl','lg','lg','md','md','md','sm','sm','sm','sm']; 
+barcos = ['xl','lg','lg','md','md','md','sm','sm','sm','sm']; 
 
 fila = document.createElement("tr");
 fila.appendChild(document.createElement("td"));

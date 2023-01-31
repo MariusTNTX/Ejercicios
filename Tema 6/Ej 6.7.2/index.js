@@ -3,10 +3,9 @@ window.addEventListener("load",()=>{
   let inputs = document.querySelectorAll("input");
 
   for(let inp of inputs){
-    inp.addEventListener("click",(e)=>{
-      console.log(e);
-      section.removeChild(e.target.previousElementSibling);
-      section.removeChild(e.target);
+    inp.addEventListener("click",()=>{
+      section.removeChild(inp.previousElementSibling);
+      section.removeChild(inp);
     });
   }
 });

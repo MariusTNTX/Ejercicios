@@ -1,8 +1,9 @@
 let boton = document.getElementById("boton");
+boton.style="position: absolute; left: "+document.body.offsetWidth/2+"px; top: 161px;";
 
 window.addEventListener("mousemove",(e)=>{
-  let pad = 30;
-  let vel = 30;
+  let pad = 20;
+  let vel = 20;
   let x = parseInt(boton.style.left.substring(0,boton.style.left.length-2));
   let x1 = x-pad;
   let x2 = boton.clientWidth+pad+parseInt(x)
@@ -20,5 +21,5 @@ window.addEventListener("mousemove",(e)=>{
 });
 
 boton.addEventListener("click",(e)=>{
-  console.log("LO CONSEGUISTE");
+  alert("LO CONSEGUISTE");
 });

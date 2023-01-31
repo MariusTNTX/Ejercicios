@@ -3,8 +3,8 @@ window.addEventListener("load",()=>{
   let inputs = document.querySelectorAll("input");
 
   for(let inp of inputs){
-    inp.addEventListener("click",(e)=>{
-      section.removeChild(e.target.parentNode);
+    inp.addEventListener("click",()=>{
+      section.removeChild(inp.parentNode);
     });
   }
 });
