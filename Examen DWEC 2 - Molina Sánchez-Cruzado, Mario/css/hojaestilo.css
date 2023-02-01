@@ -1,0 +1,16 @@
+td{
+    border:solid 1px black;
+}
+
+div{
+    display: inline-block;
+    width: 48%;
+
+}
+
+.fallo{
+    border: 1px solid red;
+}
+
+
+    
