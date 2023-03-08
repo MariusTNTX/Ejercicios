@@ -11,12 +11,12 @@ var getImageURL = async function(title, id, type, artist=''){
   if(type=='Artist'){
     filtros = ['band','artist'];
     ruta = '//upload.wikimedia.org/wikipedia/commons/thumb/';
-  } 
+  }
   if(type=='Album' || type=='Track'){
     filtros = ['album',artist];
     ruta = '//upload.wikimedia.org/wikipedia/en/thumb/';
     plus=" (album)";
-  } 
+  }
   //Obtencion de PageId
   console.log(`https://en.wikipedia.org/w/api.php?action=query&list=search&srprop=snippet&format=json&origin=*&utf8=&srsearch=${title}${plus}`)
   var responseURL = await fetch(`https://en.wikipedia.org/w/api.php?action=query&list=search&srprop=snippet&format=json&origin=*&utf8=&srsearch=${title}${plus}`);
